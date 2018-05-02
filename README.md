@@ -15,9 +15,9 @@ NO APLICA
 
 ##PASOS:
 
-1) Descargar el proyecto en la carpeta deseada
-2) Para instalar la dependencia en el repositorio ejecutar "mvn clean install"
-3) Una vez ejecutado el paso anterior, se pueden revisar las metricas de test coverage en "matrixFinder\target\site\jacoco\index.html"
+1) Descargar el proyecto en la carpeta deseada mediante git pull
+3) Para instalar la dependencia en el repositorio ejecutar "mvn clean install" desde la carpeta raiz del proyecto "mutantService"
+4) Una vez ejecutado el paso anterior, se pueden revisar las metricas de test coverage en "matrixFinder\target\site\jacoco\index.html"
 
 ##DUDAS Y/O COMENTARIOS
 
