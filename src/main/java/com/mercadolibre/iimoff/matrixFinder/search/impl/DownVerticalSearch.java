@@ -7,6 +7,21 @@ import com.mercadolibre.iimoff.matrixFinder.search.AddressableMatrixSearch;
 
 public class DownVerticalSearch extends AddressableMatrixSearch{
 
+	/**
+	 * @author iimoff
+	 * Prototype method implementation to search top-down vertical diagonal. This algorithm will
+	 * keep on serching while the next cell in the directional array is 
+	 * equals to the current one, and the secuence fit, and the next cell isn't a hit and 
+	 * the secuence isn't completed yet
+	 * if some of those conditions is false, the directonal search imediatly ends
+	 * in order to avoid innecesary loops.
+	 * @param matrix were the keys will be find
+	 * @param searchedKeys keys to find into the array
+	 * @param requiredHits char secuence required to be a hit
+	 * @param rowIndex matrix current row index
+	 * @param colIndex matrix current col index
+	 * @return boolean true if is a is a positive search
+	 */
 	@Override
 	public boolean execute(String[] matrix, Set<String> hittedCells, String searchedKeys, int requiredHits,
 			int rowIndex, int colIndex)throws IndexOutOfBoundsException {
